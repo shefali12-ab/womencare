@@ -1,38 +1,348 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap'); 
+ @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap'); 
+.navbar{
+  height: 7rem;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: snow;
+
+ 
+}
+/* .logo{
+  font-size: 1.5rem;
+  margin: 1rem;
+ 
+  font-weight: bold;
+} */
+.navbar-logo{
+  height: 9rem;
+  width: 16rem;
+ 
+  margin: 1rem;
+}
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  
+
+}
+.navbar-links li{
+  list-style: none;
+
+}
+.navbar-links li a{
+  text-decoration: none;
+ color: black;
+  padding: 1.2rem;
+  display: block;
+  font-family: 'Crimson Text', serif;
+  font-size: 1.5rem;
+  
+
+}
+.navbar-links li:hover{
+  background-color: pink;
+  border-radius: 5%;
+}
+.dashbord-btn{
+  border-style: none;
+  border-radius: 12px;
+  height: 3rem;
+  width:  9rem;
+  color: black;
+ margin: 1rem;
+ background-color: pink ;
+ font-size: 1.3rem;
+ font-family: 'Crimson Text', serif;
+ padding: 3px;
+
+}
+.dashbord-btn:hover{
+  background-color: plum;
+}
+ .img-container{
+  position: relative;
+  top: 0;
+ } 
+.bg-img{
+ width: 100%;
+ height: 40rem;
+}
+.first-heading{
+  width: 38rem;
+  position: absolute;
+  top: 7%;
+  margin-left: 30rem;
   color: white;
+  line-height: 3rem;
+  font-family: 'Crimson Text', serif;
+  font-size: 3rem;
+
+ 
+}
+.img-container .services-btn{
+  position: absolute;
+  top: 23rem;
+  left: 30%;
+  height: 4rem;
+  width:  28rem;
+  
+  
+  font-size: 1.7rem;
+  line-height: 35px;
+  color: white;
+  font-family: 'Crimson Text', serif;
+
+ 
+  
+  
 }
 
-.App-link {
-  color: #61dafb;
+.feature1{
+  display: inline-block;
+  /* background-color: aquamarine; */
+  width: 20%;
+  padding: 1rem;
 }
+.circular-img1{
+ height: 5rem;
+ width: 5rem;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+ 
+
+ margin: auto;
+ margin-bottom: 3rem;
+ margin-top: 2rem;
+}
+.feature1 a{
+  
+  
+  font-size: 1.7rem;
+  font-weight: bold;
+   text-decoration:underline;
+  color: black;
+margin-left: -7.1rem;
+
+font-family: 'Crimson Text', serif;
+width: 23rem;
+
+   
+   
+  
+}
+.feature1 p{
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 2rem 0 0 -8rem;
+  font-family: 'Lato', sans-serif;
+  width: 25rem;
+}
+.feature2{
+  display: inline-block;
+  /* background-color: rgb(161, 127, 255); */
+  width: 20%;
+  padding: 1rem;
+  font-family: 'Crimson Text', serif;
+
+}
+.circular-img2{
+  height: 5rem;
+  width: 5rem;
+ 
+ 
+  margin: auto;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+ }
+ .feature2 a{
+  
+  
+  font-size: 1.7rem;
+  font-weight: bold;
+   text-decoration:underline;
+  color: black;
+margin-left: -7rem;
+   
+   
+  
+}
+.feature2 p{
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 2rem 0 0 -3rem;
+  font-family: 'Lato', sans-serif;
+}
+.feature3{
+  display: inline-block;
+  /* background-color: rgb(161, 127, 255); */
+  width: 20%;
+  padding: 1rem;
+  font-family: 'Crimson Text', serif;
+
+}
+.circular-img3{
+  height: 5rem;
+  width: 5rem;
+ 
+  margin: auto;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  margin-left: 6rem;
+ }
+ .feature3 a{
+  
+  
+  font-size: 1.7rem;
+  font-weight: bold;
+   text-decoration:underline;
+  color: black;
+margin-left: -7rem;
+   
+   
+  
+}
+.feature3 p{
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 2rem 0 0 -1rem;
+  font-family: 'Lato', sans-serif;
+}
+.inner-div{
+  height: 20rem;
+  width: 100%;
+  /* background-color: royalblue; */
+  display: flex;
+  justify-content: center;
+  
+  margin-top: 2rem;
+  margin-left: 7rem;
+ }
+ .our-feature-sec{
+  height: 70rem;
+  width: 100%;
+
+ }
+ .our-feature-sec h1{
+  padding: 6rem 4rem 2rem 4rem;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #E06C9F;
+  font-family: 'Crimson Text', serif;
+
+ }
+ .row{
+  height: 55rem;
+  width:80%;
+   margin:auto;
+  
+ }
+ .row1{
+  height: 11rem;
+  width: 32rem;
+  background-color: #EDBFB7;
+  display: inline-block;
+  margin: 2rem 4rem 1rem 7rem;
+  border-radius: 4%;
+ }
+ .row1-logo1{
+  height:5rem;
+  width: 5rem;
+  border-radius: 100%;
+  background-color: white;
+  display: inline-block;
+  margin: 1rem;
+ }
+ .row1-text{
+ display: inline-block;
+ font-family: 'Lato', sans-serif;
+ padding: 0.5rem;
+ margin: 0rem 0rem 0rem 1rem;
+ width: 60%;
+ font-size: 1rem;
+
+ 
+ }
+  .row1-text h3{
+    color: black;
+    font-family: 'Crimson Text', serif;
+    font-size: 1.6rem;
+    width: 40rem;
+   
+
   }
-  to {
-    transform: rotate(360deg);
-  }
+ 
+ .row2{
+  height: 11rem;
+  width: 32rem;
+  background-color: #EDBFB7;
+  display: inline-block;
+  margin: 4rem 2rem 2rem 5rem;
+  border-radius: 4%;
+ }
+
+
+
+
+.about-div{
+  height: 40rem;
+  width: 50%;
+  display: inline-block;
+  
+  display: inline-block;
+  
+}
+.about-text{
+  height: 40rem;
+  width: 50%;
+  display: inline-block;
+
+  position: absolute;
+}
+.about-img{
+  height: 30rem;
+  width: 70%;
+  margin: 7rem 3rem 3rem 17rem;
+  display: inline-block;
+}
+.about-text h1{
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-top: 6rem;
+  color: #E06C9F;
+  font-family: 'Crimson Text', serif;
+
+  
+}
+.about-text p{
+  width: 60%;
+  font-size: 1.5rem;
+  line-height: 2rem;
+ margin: auto;
+justify-content: center;
+font-family: 'Lato', sans-serif;
+}
+.footer{
+  height: 12rem;
+  width:100%;
+  background-color:#E06C9F;
+  text-align: center;
+  padding: 2rem;
+}
+.footer img{
+  height:2rem;
+  margin: 1.5rem;
+}
+.footer p{
+  color: black;
+  padding: 0;
+  margin: 0;
+  font-family: 'Crimson Text', serif;
+
+  
+ 
 }
